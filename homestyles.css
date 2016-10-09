@@ -1,0 +1,16 @@
+body {
+	background: url(https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg);
+}
+
+#contact{
+    text-align:center;
+    width:50%;
+}
+
+
+
+h1,p{
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
