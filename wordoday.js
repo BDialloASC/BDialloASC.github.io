@@ -11,7 +11,7 @@ function newWord(){
 	$("#wordoday").text("");
 	//Gets a random word
 	$.ajax({
-		url:"http://randomword.setgetgo.com/get.php",
+		url:"https://randomword.setgetgo.com/get.php",
 		success:function(word){
 			//add random word to growing list
 			$("#wordoday").append("<h1>" +word+"</h1>");
@@ -26,7 +26,7 @@ function newWord(){
 function getgif(word){
 	$("#wordgif").text('');
 	$.ajax({
-		url:"http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=" + word,
+		url:"https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=" + word,
 		success:function(gif){
 			console.log(gif["data"][0]["images"]["original"]["url"]);
 			$("#wordgif").append("<img src ='" + gif["data"][0]["images"]["original"]["url"] + "'></img>");
